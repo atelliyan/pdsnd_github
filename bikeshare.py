@@ -167,8 +167,10 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        ##Check to see if user wants to see raw data
         rawdata = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n\n').lower()
         counter = 0;
+        ##access raw data for the user 
         while rawdata == 'yes':
             print(df.iloc[counter:(counter+5)])
             rawdata = input('\nWould you like to see 5 more lines of raw data? Enter yes or no.\n\n').lower()
