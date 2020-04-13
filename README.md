@@ -5,10 +5,10 @@ Today is April 12 2020
 Bikeshare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+User interface for analyzing bikeshare data
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Me I take all the credit.
