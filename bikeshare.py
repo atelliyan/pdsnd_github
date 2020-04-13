@@ -159,6 +159,7 @@ def user_stats(df):
 
 
 def main():
+    ##Keep looping until user wants out
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -170,7 +171,7 @@ def main():
         ##Check to see if user wants to see raw data
         rawdata = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n\n').lower()
         counter = 0;
-        ##access raw data for the user 
+        ##access raw data for the user
         while rawdata == 'yes':
             print(df.iloc[counter:(counter+5)])
             rawdata = input('\nWould you like to see 5 more lines of raw data? Enter yes or no.\n\n').lower()
