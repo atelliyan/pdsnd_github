@@ -16,7 +16,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs no
     while True:
         try:
             city = input("Enter city name to analyze: ").lower()
@@ -91,7 +91,7 @@ def time_stats(df):
     months = ['january', 'february', 'march', 'april', 'may', 'june']
     print(months[df['month'].mode()[0]-1].title())
 
-    # TO DO: display the most common day of week any day works 
+    # TO DO: display the most common day of week any day works
     print(df['day_of_week'].mode()[0])
 
     # TO DO: display the most common start hour
